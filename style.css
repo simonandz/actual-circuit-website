@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace; /* Set the global font */
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.header {
+  position: fixed; /* Fixes the header to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Set a fixed height for the header */
+  padding: 0 20px; /* Consistent padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: transparent; /* Initial transparent background */
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  font-family: 'Roboto Mono', monospace; /* Ensure the header uses the global font */
+}
+
+.header.scrolled {
+  transform: translateY(-100%); /* Slide the header up out of view */
+}
+
+.header.show {
+  transform: translateY(0); /* Slide the header down into view */
+}
+
+.header.background {
+  background-color: white; /* Background turns white when not over the hero section */
+  color: black;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  margin: 0 15px; /* Ensure consistent spacing between nav links */
+  font-size: 16px; /* Consistent font size across all pages */
+  transition: color 0.3s ease;
+  line-height: 80px; /* Ensure links are vertically centered */
+  font-family: 'Roboto Mono', monospace; /* Ensure consistency in the nav links */
+}
+
+.nav-buttons a.volunteer {
+  color: red;
+}
+
+.nav-buttons a.classes {
+  color: blue; /* Make the text of the Classes button blue */
+}
+
+.title {
+  font-size: 48px; /* Ensure the title size remains large */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Add transition for color changes */
+  line-height: 80px; /* Ensure the title is vertically centered */
+  font-family: 'Roboto Mono', monospace; /* Ensure title uses consistent font */
+}
+
+.header.background .title {
+  color: black; /* Change title color to black when background is white */
+}
+
+.hero {
+  height: 75vh; /* 75% of the viewport height */
+  background-image: url('https://media.discordapp.net/attachments/1272764509114728534/1272968033232490598/proxy-image.jpg?ex=66bce75d&is=66bb95dd&hm=f38f81e15f714d77f702a92040f9c0507b96c5afeadb6a17fce77345d4b01812&=&format=webp'); /* Use the uploaded image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack content vertically */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto Mono', monospace; /* Ensure the hero section uses the global font */
+}
+
+.hero h1 {
+  color: white;
+  font-size: 64px; /* Large text in the hero section */
+  font-weight: bold;
+  margin: 0 0 20px 0; /* Add margin below the text */
+}
+
+.hero .button-container {
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+  margin-bottom: 30px; /* Add some space below the buttons */
+}
+
+.hero .volunteer-button,
+.hero .classes-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-family: 'Roboto Mono', monospace; /* Ensure consistency in button text */
+}
+
+.hero .volunteer-button {
+  background-color: red;
+  color: white;
+}
+
+.hero .volunteer-button:hover {
+  background-color: darkred; /* Darker red on hover */
+}
+
+.hero .classes-button {
+  background-color: blue;
+  color: white;
+}
+
+.hero .classes-button:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}
+
+.content {
+  padding: 60px 20px; /* Default padding for content */
+  background-color: white;
+  font-family: 'Roboto Mono', monospace; /* Ensure the content uses the global font */
+}
+
+.page-title {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the title */
+  margin-top: 100px; /* Space above the title */
+  text-align: center;
+  font-family: 'Roboto Mono', monospace; /* Ensure consistency in page title font */
+}
+
+.page-description {
+  color: black;
+  font-size: 20px;
+  max-width: 800px; /* Limit the width for better readability */
+  line-height: 1.6;
+  margin: 0 auto; /* Center the text */
+  text-align: center;
+  font-family: 'Roboto Mono', monospace; /* Ensure consistency in page description font */
+}
+
+.founder {
+  margin-bottom: 40px; /* Space between founder sections */
+  text-align: center;
+  font-family: 'Roboto Mono', monospace; /* Ensure consistency in founder section font */
+}
+
+/* Added CSS for the Our Mission section */
+.mission-title {
+  color: black;
+  font-size: 36px;
+  font-weight: bold; /* Makes the "Our Mission" title bold */
+  margin-bottom: 20px;
+  text-align: center; /* Centers the "Our Mission" title */
+}
+
+.mission-description {
+  color: black;
+  font-size: 20px;
+  max-width: 800px; /* Limits the width for better readability */
+  line-height: 1.6;
+  margin: 0 auto; /* Centers the text */
+  text-align: center; /* Centers the mission description text */
+}
+
+/* Added CSS for the Calendar section */
+.calendar-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
