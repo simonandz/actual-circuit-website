@@ -34,6 +34,11 @@ body {
   color: black;
 }
 
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .nav-buttons a {
   text-decoration: none;
   color: inherit;
@@ -184,4 +189,53 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .header {
+    height: auto; /* Adjust height for content */
+    padding: 10px; /* Adjust padding */
+    flex-direction: column; /* Stack header elements vertically */
+  }
+
+  .nav-buttons {
+    flex-direction: column; /* Stack navigation buttons */
+    align-items: center;
+  }
+
+  .nav-buttons a {
+    margin: 5px 0; /* Reduce margin between nav buttons */
+    font-size: 14px; /* Reduce font size for nav buttons */
+    line-height: 1.5; /* Adjust line height */
+  }
+
+  .title {
+    font-size: 28px; /* Reduce title size */
+    line-height: 1.2; /* Adjust line height */
+  }
+
+  .hero h1 {
+    font-size: 36px; /* Reduce hero text size */
+    margin-bottom: 10px; /* Reduce margin below hero text */
+  }
+
+  .hero .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduce gap between buttons */
+  }
+
+  .content {
+    padding: 20px 10px; /* Reduce padding for content */
+  }
+
+  .page-title {
+    font-size: 28px; /* Reduce page title size */
+    margin-top: 50px; /* Adjust margin above title */
+  }
+
+  .calendar-container iframe {
+    width: 100%; /* Make calendar responsive */
+    height: auto; /* Adjust height automatically */
+  }
 }
