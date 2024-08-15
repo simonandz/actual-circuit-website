@@ -72,7 +72,7 @@ body {
 
 .hero {
   height: 75vh; /* 75% of the viewport height */
-  background-image: url('https://media.discordapp.net/attachments/1272764509114728534/1272968033232490598/proxy-image.jpg?ex=66bce75d&is=66bb95dd&hm=f38f81e15f714d77f702a92040f9c0507b96c5afeadb6a17fce77345d4b01812&=&format=webp'); /* Use the uploaded image */
+  background-image: url('images/Drawing-16.sketchpad.png'); /* Use the uploaded image */
   background-size: cover;
   background-position: center;
   display: flex;
