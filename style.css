@@ -72,7 +72,7 @@ body {
 
 .hero {
   height: 75vh; /* 75% of the viewport height */
-  background-image: url('https://stem-4-kids.org/images/mainbackground.jpg'); /* Use the uploaded image */
+  background-image: url('https://media.discordapp.net/attachments/1272764509114728534/1272968033232490598/proxy-image.jpg?ex=66be38dd&is=66bce75d&hm=f03a128bdda448bd226c873c8882d688db8788e7d165053dea461062d766501d&=&format=webp'); /* Use the uploaded image */
   background-size: cover;
   background-position: center;
   display: flex;
